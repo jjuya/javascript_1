@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+
+<!-- 두 function의 차이 -->
+<script>
+  alertHi(); // 선언하지 않아도 미리 알고 있다
+  alertHello(); //선언되지 않았을 때 실행하면 선언되지 않았다고 에러
+  
+  function alertHi() {
+    alert("Hi");
+  }
+  
+  var alertHello = function() {
+    alert("Hello!")
+  }
+  
+  alertHello(); // 에러 안뜸
+</script>
